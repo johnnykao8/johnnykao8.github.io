@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html> 
 <head> </head>
 <title> Kao,Ching - Hua </title>
