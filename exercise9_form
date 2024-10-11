@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+    <label for = "fname"> First name:</label><br>
+    <input type = "text" id = "fname" name = "fname" value = "Ching-Hua"><br>
+    <br>
+    <label for = "lname"> Last name:</label><br>
+    <input type = "text" id = "lname" name = "lname" value = "Kao"><br>
+    <br>
+    <label for = "stdid"> Student ID:</label><br>
+    <input type = "text" id = "stdid" name = "stdid" value = "1133513"><br>
+    <br>
+    <input type = "submit" value = "Submit">
+</form>
+</body>
+</html>
