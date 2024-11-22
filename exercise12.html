@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Styled Boxes</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+
+            .box {
+                margin: 20px 0;
+                padding: 10px 20px;
+                font-size: 24px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            /* First Box Style - Double Line Border */
+            .box1 {
+                background-color: lightblue;
+                color: black;
+                border: 5px double red; /* Double-line border */
+                border-radius: 5px;
+            }
+
+            /* Second Box Style */
+            .box2 {
+                background-color: yellow;
+                color: black;
+                border: 3px solid blue;
+                border-radius: 10px;
+            }
+
+            /* Third Box Style - Border Surrounded by Small Circles */
+            .box3 {
+                background-color: green;
+                color: black;
+                background-image: radial-gradient(purple 10%, transparent 10%);
+                background-size: 20px 20px;
+                border: 5px solid transparent;
+                border-radius: 15px;
+                position: relative;
+            }
+
+            /* Adding dotted effect around the third box */
+            .box3:before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                right: -10px;
+                bottom: -10px;
+                border: 5px dotted purple; /* Dotted border */
+                border-radius: 20px; /* Matches the box's rounded corners */
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box box1">Hello World</div>
+        <div class="box box2">Hello World</div>
+        <div class="box box3">Hello World</div>
+    </body>
+    </html>
