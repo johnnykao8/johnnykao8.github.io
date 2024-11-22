@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Styled Headings</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 50px;
+            }
+
+            /* Heading 1 Style */
+            h1 {
+                font-family: 'Times New Roman', serif;
+                font-size: 36px;
+                font-weight: bold;
+                color: #b22a27;
+                margin-bottom: 20px;
+                position: relative;
+            }
+
+            h1::before {
+                content: '';
+                position: absolute;
+                top: -10px; /* Moves the line above the text */
+                left: 0;
+                width: 100%;
+                border-top: 5px solid #b22a27; /* Red line */
+            }
+
+            /* Heading 2 Style */
+            h2 {
+                font-family: 'Courier New', monospace;
+                font-size: 28px;
+                font-style: italic;
+                color: #3f3f3f;
+                background-color: white; /* White background */
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 5px solid black; /* Black border */
+                outline: 5px solid yellow; /* Yellow border as the second layer */
+                border-radius: 5px; /* Optional: for rounded corners */
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow under the box */
+            }
+
+            /* Heading 3 Style */
+            h3 {
+                font-family: 'Georgia', serif;
+                font-size: 24px;
+                font-weight: bold; /* Bold text */
+                text-decoration: underline; /* Underline text */
+                color: #3f3f3f;
+                margin-top: 10px;
+                text-align: right; /* Align the text to the right */
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+
+    </body>
+    </html>
