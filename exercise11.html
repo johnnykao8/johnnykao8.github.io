@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle and Rectangle with Borders</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .rectangle {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(46, 14, 230);
+            border: 5px solid darkblue; /* Border for the rectangle */
+            position: relative;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(25, 217, 118);
+            border-radius: 50%;
+            border: 5px solid rgb(139, 0, 125); /* Border for the circle */
+            position: absolute;
+            top: 50px; /* Adjust to partially embed */
+            left: 150px; /* Adjust to partially embed */
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
